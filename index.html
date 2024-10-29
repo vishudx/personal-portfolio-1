@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f1a2b;
+  color: #fff;
+}
+
+header {
+  background-color: #0f1a2b;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+
+.content {
+  max-width: 50%;
+}
+
+.welcome-text {
+  color: #ffc107;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.description {
+  margin: 20px 0;
+  font-size: 16px;
+  color: #aaa;
+}
+
+button {
+  background-color: #ffc107;
+  color: #0f1a2b;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.image img {
+  border-radius: 10px;
+  max-width: 300px;
+  height: auto;
+}
+
+</style>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">SERVICE</a></li>
+        <li><a href="#">PORTFOLIO</a></li>
+        <li><a href="#">RESUME</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="content">
+      <p class="welcome-text">Hello, Welcome</p>
+      <h1>I’m VISHAL T</h1>
+      <p class="description">hi I am a front end web developer and have a skills in HTLL,CSS,JAVASCRIPT.</p>
+      <button onclick="contactUs()">Contact us</button>
+    </div>
+    <div class="image">
+      <img src="1.jpeg" alt=" VISHAL">
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+<script>
+function contactUs() {
+    alert("Contact us button clicked!");
+  }
+</script>
+</html>
